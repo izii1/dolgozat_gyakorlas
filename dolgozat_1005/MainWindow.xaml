@@ -1,0 +1,282 @@
+﻿<Window x:Class="dolgozat_1005.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dolgozat_1005"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1200" Width="600">
+    <Grid Margin="40px">
+        <StackPanel>
+            <TextBlock
+                Text="Gamer PC rendelő"
+                Margin="0,0,0,10"
+                Height="40"
+                Width="255"
+                FontSize="30"
+                FontWeight="Bold"
+                HorizontalAlignment="Center"
+                />
+            <TextBlock
+                Text="Név:"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="150"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+            <TextBox
+                x:Name="txtName"
+                Margin="0,0,0,10"
+                Height="30"
+                Width="150"
+                HorizontalAlignment="Left"
+                />
+            <TextBlock
+                Text="Életkor:"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="150"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+            <TextBox
+                x:Name="txtAge"
+                Margin="0,0,0,10"
+                Height="30"
+                Width="150"
+                HorizontalAlignment="Left"
+                />
+
+            <TextBlock
+                Text="E-mail cím:"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="150"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+            <TextBox
+                x:Name="txtEmail"
+                Margin="0,0,0,10"
+                Height="30"
+                Width="150"
+                HorizontalAlignment="Left"
+                />
+
+            <TextBlock
+                Text="Processzor kiválasztása: "
+                Margin="0,15,0,0"
+                Height="25"
+                Width="200"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+
+            <ComboBox
+                x:Name="myComboBox"
+                Height="20"
+                Width="200"
+                Margin="0,0,0,10"
+                HorizontalAlignment="Left"
+                SelectedIndex="-1">
+                <ComboBoxItem>Intel Core i5 – 70 000 Ft</ComboBoxItem>
+                <ComboBoxItem>Intel Core i7 – 110 000 Ft</ComboBoxItem>
+                <ComboBoxItem>AMD Ryzen 5 – 65 000 Ft</ComboBoxItem>
+                <ComboBoxItem>AMD Ryzen 7 – 105 000 Ft</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock
+                Text="Videokártya kiválasztása: "
+                Margin="0,15,0,0"
+                Height="25"
+                Width="200"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+
+            <RadioButton
+                 x:Name="rb4060"
+                 GroupName="gpu"
+                 Margin="0,0,0,0"
+                 Height="30"
+                 Width="150"
+                 Content="RTX 4060 – 130 000 Ft"
+                 HorizontalAlignment="Left"/>
+            <RadioButton
+                 x:Name="rb4070"
+                 GroupName="gpu"
+                 Margin="0,0,0,0"
+                 Height="30"
+                 Width="150"
+                 Content="RTX 4070 – 220 000 Ft"
+                 HorizontalAlignment="Left"/>
+
+            <RadioButton
+                 x:Name="rb4080"
+                 GroupName="gpu"
+                 Margin="0,0,0,0"
+                 Height="30"
+                 Width="150"
+                 Content="RTX 4080 – 400 000 Ft"
+                 HorizontalAlignment="Left"/>
+            <TextBlock
+                Text="Memória mennyisége kiválasztása: "
+                Margin="0,15,0,0"
+                Height="25"
+                Width="250"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+            <RadioButton
+             x:Name="rb16"
+             GroupName="memory"
+             Margin="0,0,0,0"
+             Height="30"
+             Width="150"
+             Content="16 GB – 20 000 Ft"
+             HorizontalAlignment="Left"/>
+            <RadioButton
+             x:Name="rb32"
+             GroupName="memory"
+             Margin="0,0,0,0"
+             Height="30"
+             Width="150"
+             Content="32 GB – 35 000 Ft"
+             HorizontalAlignment="Left"/>
+
+            <RadioButton
+             x:Name="rb64"
+             GroupName="memory"
+             Margin="0,0,0,0"
+             Height="30"
+             Width="150"
+             Content="64 GB – 65 000 Ft"
+             HorizontalAlignment="Left"/>
+
+            <TextBlock
+                Text="Hány darab számítógépet szeretne rendelni?"
+                Margin="0,15,0,0"
+                Height="25"
+                Width="400"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+             <TextBox
+                x:Name="pcNumber"
+                Margin="0,0,0,10"
+                Height="30"
+                Width="150"
+                HorizontalAlignment="Left"
+                />
+
+            <TextBlock
+                Text="Garancia: "
+                Margin="0,15,0,0"
+                Height="25"
+                Width="200"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+
+            <RadioButton
+             x:Name="rbG1"
+             GroupName="gar"
+             Margin="0,0,0,0"
+             Height="30"
+             Width="150"
+             Content="Alap 1 év – ingyenes"
+             HorizontalAlignment="Left"/>
+            <RadioButton
+             x:Name="rbG3"
+             GroupName="gar"
+             Margin="0,0,0,0"
+             Height="30"
+             Width="150"
+             Content="3 év garancia – +30 000 Ft"
+             HorizontalAlignment="Left"/>
+
+            <RadioButton
+             x:Name="rbG5"
+             GroupName="gar"
+             Margin="0,0,0,20"
+             Height="30"
+             Width="150"
+             Content="5 év garancia – +60 000 Ft"
+             HorizontalAlignment="Left"/>
+
+            <TextBlock
+                Text="Extrák: "
+                Margin="0,15,0,0"
+                Height="25"
+                Width="200"
+                FontSize="15"
+                FontWeight="Bold"
+                HorizontalAlignment="Left"
+                />
+
+            <CheckBox
+                x:Name="check1"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="300"
+                Content="RGB világítás – +15 000 Ft"
+                HorizontalAlignment="Left"
+                />
+            <CheckBox
+                x:Name="check2"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="300"
+                Content="Windows 11 – +45 000 Ft"
+                HorizontalAlignment="Left"
+                />
+            <CheckBox
+                x:Name="check3"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="300"
+                Content="Gamer billentyűzet – +25 000 Ft"
+                HorizontalAlignment="Left"
+                />
+            <CheckBox
+                x:Name="check4"
+                Margin="0,0,0,20"
+                Height="30"
+                Width="300"
+                Content="Gamer egér – +18 000 Ft"
+                HorizontalAlignment="Left"
+                />
+            
+            <CheckBox
+                x:Name="checkBox"
+                Margin="0,0,0,0"
+                Height="30"
+                Width="300"
+                FontWeight="Bold"
+                FontSize="15"
+                Content="Elfogadom a vásárlási feltételeket."
+                HorizontalAlignment="Left"
+                />
+            <Button
+                x:Name="btnAccept"
+                Margin="0,10,0,0"
+                Height="30"
+                Width="200"
+                FontWeight="Bold"
+                FontSize="20"
+                Content="Rendelés"
+                HorizontalAlignment="Center" Click="btnAccept_Click"/>
+
+        </StackPanel>
+        
+    </Grid>
+</Window>
